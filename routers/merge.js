@@ -36,9 +36,9 @@ router.get('/', function (req, res, next) {
     axios.all([twitterRequest,weatherRequest,YoutubeRequest]) //weatherRequest
         .then(
             axios.spread((...responses) => {
-                const responseOne = responses[0].data.meta.newest_id;
-                const responseTwo = responses[1].data.main.temp;
-                const responseThree = responses[2].data.items[0].id.videoId;
+                const responseOne = "Recommendation ID in twitter:" + responses[0].data.meta.newest_id;
+                const responseTwo = "The temperature of country:" + responses[1].data.main.temp;
+                const responseThree = "Recommendation ID in Youtube" + responses[2].data.items[0].id.videoId;
                 // use/access the results
                 console.log(responseOne, responseTwo ,responseThree); //rsponseTwo
                 const body = JSON.stringify({ source: 'S3 Bucket', ...responseOne + responseTwo +responseThree});
