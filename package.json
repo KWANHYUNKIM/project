@@ -1,0 +1,28 @@
+{
+  "name": "assignment2",
+  "version": "1.0.0",
+  "description": "Cloud Computing",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jeffrey0312/CAB432_A2.git"
+  },
+  "author": "kwanhyun kim / jeffrey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jeffrey0312/CAB432_A2/issues"
+  },
+  "homepage": "https://github.com/Jeffrey0312/CAB432_A2#readme",
+  "dependencies": {
+    "aws-sdk": "^2.1017.0",
+    "axios": "^0.24.0",
+    "dotenv": "^10.0.0",
+    "ejs": "^3.1.6",
+    "pug": "^3.0.2",
+    "redis": "^3.1.2"
+  }
+}
